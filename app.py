@@ -42,7 +42,7 @@ if not my_api_key_gemini:
 genai.configure(api_key=my_api_key_gemini)
 
 try:
-    model = genai.GenerativeModel("gemini-pro")
+    model = genai.GenerativeModel("gemini-1.5-pro-latest")
     logger.info("Gemini model initialized successfully.")
 except Exception as model_error:
     logger.error(f"Model Initialization Error: {model_error}")
